@@ -7,7 +7,7 @@
 
 3. Menu (Different for Different Colleges ,Offers ,New Arrivals, Most bought, Best Seller etc) 
 
-4. Cart Page 
+4. Cart Page (Category of Food/ Calories per Item/ Nav Bar (Contact Support))
 
 5. Payment Page/Wallet Page  
 
