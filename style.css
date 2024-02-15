@@ -57,7 +57,75 @@
 #location{
     text-align: center;
 }
-footer{
-    background-color: black;
-    color: aliceblue;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    display: block;
+    object-fit: cover;
+    border: 5px solid #3498db;
+}
+
+.user-info h2 {
+    margin: 0;
+    color: #333333;
+}
+
+.user-info p {
+    margin: 5px 0;
+    color: #777777;
+}
+
+.personal-details, .academic-info, .dietary-preferences, .wallet-balance,
+.notification-preferences, .canteen-favorites, .feedback-ratings, .settings {
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2978a0;
+}
+
+footer {
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
