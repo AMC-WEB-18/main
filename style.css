@@ -70,7 +70,7 @@ header {
     text-align: center;
     color: #ffffff;
 }
-
+/*Profile Page*/
 .profile-container {
     max-width: 800px;
     margin: 20px auto;
@@ -119,7 +119,59 @@ header {
 .button:hover {
     background-color: #2978a0;
 }
+/*Login Page*/
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
 
+#login-heading,
+#signup-heading {
+    text-align: center;
+    color: #333333;
+}
+
+#signup-form {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #2978a0;
+}
 footer {
     background-color: #3498db;
     color: #ffffff;
