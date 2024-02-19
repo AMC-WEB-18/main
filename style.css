@@ -222,6 +222,53 @@ header {
 .checkout-btn:hover {
     background-color: #45a049;
 }
+/*Order Page*/
+.orders-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.order-list {
+    list-style: none;
+    padding: 0;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.order-item:hover {
+    background-color: #f5f5f5;
+}
+
+.order-details {
+    flex: 1;
+}
+
+.order-amount {
+    margin-left: 20px;
+}
+
+.order-total {
+    margin-top: 20px;
+}
+
+#totalAmount {
+    font-weight: bold;
+    color: #3498db;
+}
 footer {
     background-color: #3498db;
     color: #ffffff;
