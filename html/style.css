@@ -33,7 +33,7 @@
     text-align: center;
     font-size: x-large;
 }
-.menu_item{
+.menu_head{
     list-style: none;
     display: inline-block;
     padding: 25px;
@@ -42,13 +42,15 @@
     margin-right: 10%;
     font-size: medium;
 }
-#menu_item_1.menu_item{
+#menu_head_1.menu_head{
     background-color: aquamarine;
+    text-align: center;
+    height: auto;
 }
-#menu_item_2.menu_item{
+#menu_head_2.menu_head{
     background-color: goldenrod;
 }
-#menu_item_3.menu_item{
+#menu_head_3.menu_head{
     background-color: cadetblue;
 }
 #specials{
