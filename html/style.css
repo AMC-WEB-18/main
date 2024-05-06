@@ -37,21 +37,24 @@
     list-style: none;
     display: inline-block;
     padding: 25px;
-    background-color: rgb(255, 146, 12);
     color: black;
     margin-right: 10%;
     font-size: medium;
 }
 #menu_head_1.menu_head{
-    background-color: aquamarine;
     text-align: center;
     height: auto;
 }
 #menu_head_2.menu_head{
-    background-color: goldenrod;
-}
+    text-align: center;
+    height: auto;
+    }
 #menu_head_3.menu_head{
-    background-color: cadetblue;
+    text-align: center;
+    height: auto;
+}
+.menu_item{
+    list-style-type: none;
 }
 #specials{
     text-align: center;
