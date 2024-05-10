@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/home_page.css">
     <title>MPSTME Canteen</title>
     <div id="Nav_Bar">
         <nav>
@@ -12,7 +12,6 @@
             <li class="Nav_Bar_List_Item"><a href="./home_page.html">🏠Home</a></li>
             <li class="Nav_Bar_List_Item"><a href="./home_page.html#menu">📃Menu</a></li>
             <li class="Nav_Bar_List_Item"><a href="#">🌟Special</a></li>
-            <li class="Nav_Bar_List_Item"><a href="./cart_page.html">🛒Cart</a></li>
             <li class="Nav_Bar_List_Item"><a href="./orders.html">🍴Orders</a></li>
             <li class="Nav_Bar_List_Item"><a href="#">📞Contact Us</a></li>
         </ul> 
@@ -27,39 +26,30 @@
     </div>
 
     <section id="menu">
-        <h1>Menu</h1>
-        <ul>
-            <li id="menu_head_1" class="menu_head"><strong>Breakfast:</strong>
-                <ul class="menu_items">
-                    <li class="menu_item">
-                        <img src="../img/idli_sambhar.jpg" alt="idli_sambhar">
-                        <p>Idli with Sambar and Chutney</p>
-                        <button class="add-to-cart-btn" data-item="Idli with Sambar and Chutney" data-price="50.00">Add to Cart</button>
-                    </li>
-                    <!-- Add other breakfast items with images and buttons -->
-                </ul>
-            </li>
-            <li id="menu_head_2" class="menu_head"><strong>Lunch:</strong>
-                <ul class="menu_items">
-                    <li class="menu_item">
-                        <img src="../img/butter_chicken.jpg" alt="butter_chicken">
-                        <p>Butter Chicken</p>
-                        <button class="add-to-cart-btn" data-item="Butter Chicken" data-price="120.00">Add to Cart</button>
-                    </li>
-                    <!-- Add other lunch items with images and buttons -->
-                </ul>
-            </li>
-            <li id="menu_head_3" class="menu_head"><strong>Dinner:</strong>
-                <ul>
-                    <li class="menu_item">
-                        <img src="../img/rogan_josh.jpg" alt="rogan_josh">
-                        <p>Rogan Josh</p>
-                        <button class="add-to-cart-btn" data-item="Rogan Josh" data-price="150.00">Add to Cart</button>
-                    </li>
-                    <!-- Add other dinner items with images and buttons -->
-                </ul>
-            </li>
-        </ul>
+        <div class="container">
+            <header>
+                <h1>Our Menu</h1>
+                <div class="shopping">
+                    <img src="../img/shopping.svg" alt="'shopping cart img">
+                    <span class="quantity">0</span>
+                </div>
+            </header>
+
+    <div class="list">
+      
+    </div>
+</div>
+<div class="card">
+    <h1>Cart🛒</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="checkOut">
+        <button>Check Out</button>
+        <div class="total">0</div>
+        <div class="closeShopping">Close</div>
+    </div>
+</div>
+</div>
     </section>
     
 

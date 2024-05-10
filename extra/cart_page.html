@@ -19,17 +19,26 @@
     </div>
     <div class="cart-container">
         <h1>Your Cart</h1>
-        <ul class="cart-items">
-            <!-- Cart items will be dynamically generated here -->
-        </ul>
-        <div class="cart-total">
-            <p>Total: ₹ <span id="totalAmount">0.00</span></p>
-            <button class="checkout-btn">Checkout</button>
+        <div class="header">
+            <p class="logo">LOGO</p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
         </div>
-    </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
+            </div>
+        </div>
+    
     <footer id="pageFooter">
         <p>&copy; 2024 College Canteen. All rights reserved.</p>
     </footer>
 </body>
+<script src="home_page_ordering.js"></script>
 <script src="footer-toggle.js"></script>
 </html>
