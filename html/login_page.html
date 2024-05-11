@@ -1,70 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Canteen App Login</title>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="../css/login.css">
     </head>
     <body>
-        <header>
-            <h1>Canteen App</h1>
-        </header>
-        <div class="login-container">
-            <div id="login-form">
-                <h2 id="login-heading">Login</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" required>
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header"> Login</h2>
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="full_name" placeholder="Full name">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="New Password">
+
+                        
+
+                        <div id="button_container">
+                            <button onclick="login()">Login</button>
+                            <button onclick="register()">Register</button>
+                        </div>
+
                     </div>
-                    <div class="form-group">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="button">Login</button>
-                    </div>
-                </form>
-                <p>Don't have an account? <a href="#" onclick="showSignUpForm()">Sign Up</a></p>
-            </div>
-    
-            <div id="signup-form">
-                <h2 id="signup-heading">Sign Up</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="sap-id">Student SAP ID:</label>
-                        <input type="text" id="sap-id" name="sap-id" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="signup-password">Password:</label>
-                        <input type="password" id="signup-password" name="signup-password" required>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="button">Sign Up</button>
-                    </div>
-                </form>
-                <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+                </div>
             </div>
         </div>
-        <footer id="pageFooter">
-            <p>&copy; 2024 College Canteen. All rights reserved.</p>
-        </footer>
     </body>
-    <script>
-        function showSignUpForm() {
-            document.getElementById('login-form').style.display = 'none';
-            document.getElementById('signup-form').style.display = 'block';
-        }
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
-        function showLoginForm() {
-            document.getElementById('signup-form').style.display = 'none';
-            document.getElementById('login-form').style.display = 'block';
-        }
-    </script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="../js/login.js"></script>
+
 </html>
