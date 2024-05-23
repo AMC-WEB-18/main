@@ -1,11 +1,11 @@
 html, body {
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
-
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/login_page_bg.jpg);
+    background-size: cover;
 }
 
 * {
@@ -45,7 +45,6 @@ html, body {
     padding-top: 30px;
 
     border-bottom: 1px solid transparent;
-    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 20;
     background: #000;
 }
 
@@ -56,10 +55,8 @@ html, body {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
-
-
-    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
-      -webkit-background-clip: text;
+    background-color: #fff;
+    -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 }
 
@@ -100,27 +97,34 @@ input {
     border-bottom: 2px solid transparent;
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
-    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 1;
 }
 
 #button_container {
     width: 100%;
     height: 10%;
 
-    background-image: linear-gradient(80deg, #FFBE0B, #FB5607 50%, #FF006E 50%, #8338EC);
     color: #fff;
-
     float: left;
 
     margin-top: 5px;
 }
-
+#login_button{
+    border: #000;
+    border-radius: 50%;
+    padding: 5px;
+    background-color:brown;
+}
+#register_button{
+    border: #000;
+    border-radius: 50%;
+    background-color:green;
+}
 #button_container button {
     width: 50%;
     height: 100%;
     float: left;
-
-    background: transparent;
+    
+    
     color: inherit;
 
     font-family: Montserrat;

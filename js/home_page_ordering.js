@@ -136,31 +136,3 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
-<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1"></script>
-let checkoutButton = document.querySelector('.checkout_button');
-
-checkoutButton.addEventListener('click', generateQRCode);
-
-function generateQRCode() {
-    // Get the total price as the content for the QR code
-    let totalPrice = total.innerText.replace(/,/g, ''); // Remove commas from the total price
-    let qrcontent = `Total Price: ${totalPrice}`;
-    let qrContent= 'HELLO'
-
-    // Create a new QR code instance
-    let qrCode = new qrCode(document.createElement('div'), {
-        text: qrContent,
-        width: 128,
-        height: 128,
-        colorDark: '#000000',
-        colorLight: '#ffffff',
-        correctLevel: qrCode.CorrectLevel.H // Error correction level
-    });
-
-    // Clear any existing QR code
-    let qrContainer = document.querySelector('.qr-container');
-    qrContainer.innerHTML = '';
-
-    // Append the generated QR code to the container
-    qrContainer.appendChild(qrCode._el);
-}
