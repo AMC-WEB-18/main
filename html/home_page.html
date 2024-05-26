@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/home_page.css">
+    <script src="../node_modules/easyqrcodejs/dist/easy.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
     <title>MPSTME Canteen</title>
     <div id="Nav_Bar">
         <nav>
@@ -45,6 +46,16 @@
     <ul class="listCard">
     </ul>
     <div class="checkOut">
+        <div id="qrcode" class="qr"></div>
+        <script type="text/javascript">
+            // Options
+            var options = {
+                text: "Testing"
+            };
+            
+            // Create QRCode Object
+            new QRCode(document.getElementById("qrcode"), options);
+        </script>
         <div class="total">0</div>
         <div class="closeShopping">Close</div>
     </div>
@@ -62,7 +73,8 @@
         <h2>Location</h2>
         <p>We are located in the main campus building. Visit us today!</p>
     </section>
-
+    
+    
     <footer id="pageFooter">
         <p>&copy; 2024 College Canteen. All rights reserved.</p>
     </footer>

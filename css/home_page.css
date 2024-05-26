@@ -214,9 +214,10 @@ header .shopping span{
 .menu_item{
     list-style-type: none;
 }
-#qr-container{
-    height: 100px;
-    background-color: green;
+#qrcode{
+    padding: 20px;
+    height: auto;
+    width: auto;
 }
 #specials{
     text-align: center;

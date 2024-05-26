@@ -5,7 +5,6 @@ let listCard = document.querySelector('.listCard');
 let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
-
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
 })
@@ -126,6 +125,9 @@ function reloadCard(){
     })
     total.innerText = totalPrice.toLocaleString();
     quantity.innerText = count;
+   
+
+
 }
 function changeQuantity(key, quantity){
     if(quantity == 0){
