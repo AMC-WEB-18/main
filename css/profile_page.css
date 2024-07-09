@@ -4,60 +4,57 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #1b4f71;
 }
 
 header {
-    background-color: #3498db;
     padding: 20px;
     text-align: center;
+    
+}
+#Nav_Bar{
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    
+
+}
+#Nav_Bar_List{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+
+}
+.Nav_Bar_List_Item a{
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 2s;
+
+}
+.Nav_Bar_List_Item a:hover{
+    text-decoration: underline;
+}
+#mail{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
     color: #ffffff;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
 }
-.profile-container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto 30px;
-    display: block;
-    object-fit: cover;
-    border: 5px solid #3498db;
-}
-
-.user-info h2 {
-    margin: 0;
-    color: #333333;
-}
-
-.user-info p {
-    margin: 5px 0;
-    color: #777777;
-}
-
-.personal-details, .academic-info, .dietary-preferences, .wallet-balance,
-.notification-preferences, .canteen-favorites, .feedback-ratings, .settings {
-    margin-bottom: 30px;
-}
-
-.button {
-    background-color: #3498db;
+#call{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
     color: #ffffff;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
 
-.button:hover {
-    background-color: #2978a0;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/orders.css">
     <title>Your Orders</title>
 </head>
 <body>
@@ -11,9 +11,9 @@
         <ul id="Nav_Bar_List">
             <li class="Nav_Bar_List_Item"><a href="./home_page.html">🏠Home</a></li>
             <li class="Nav_Bar_List_Item"><a href="./home_page.html#menu">📃Menu</a></li>
-            <li class="Nav_Bar_List_Item"><a href="#">🌟Special</a></li>
+            <li class="Nav_Bar_List_Item"><a href="./home_page.html#specials">🌟Special</a></li>
             <li class="Nav_Bar_List_Item"><a href="./orders.html">🍴Orders</a></li>
-            <li class="Nav_Bar_List_Item"><a href="#">📞Contact Us</a></li>
+            <li class="Nav_Bar_List_Item"><a href="./contact.html">📞Contact Us</a></li>
         </ul>
     </div>
 
@@ -24,9 +24,11 @@
                 <span class="order-num">Order #123</span>
                 <span class="order-details">Vada Pav, Samosa Pav</span>
                 <span class="order-amount">₹25.00</span>
-                <div id="qrbox">
-                <span class="order-qr-code"><img src="" id="qrcode" alt="qr-code"></span>
-                </div>
+            </li>
+            <li class="order-item">
+                <span class="order-num">Order #000</span>
+                <span class="order-details">Coke</span>
+                <span class="order-amount">₹50.00</span>
             </li>
             <!-- Add more order items as needed -->
         </ul>
@@ -39,6 +41,5 @@
         <p>&copy; 2024 College Canteen. All rights reserved.</p>
     </footer>
 </body>
-<script src="footer-toggle.js"></script>
 <script src="../js/qr-code-gen.js"></script>
 </html>

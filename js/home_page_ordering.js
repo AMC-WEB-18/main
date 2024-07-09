@@ -1,3 +1,4 @@
+
 let openShopping = document.querySelector('.shopping');
 let closeShopping = document.querySelector('.closeShopping');
 let list = document.querySelector('.list');
@@ -126,8 +127,7 @@ function reloadCard(){
     total.innerText = totalPrice.toLocaleString();
     quantity.innerText = count;
    
-
-
+ 
 }
 function changeQuantity(key, quantity){
     if(quantity == 0){
