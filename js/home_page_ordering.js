@@ -1,4 +1,3 @@
-
 let openShopping = document.querySelector('.shopping');
 let closeShopping = document.querySelector('.closeShopping');
 let list = document.querySelector('.list');
@@ -6,6 +5,7 @@ let listCard = document.querySelector('.listCard');
 let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
+let qr= document.getElementById("qrcode");
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
 })
@@ -82,6 +82,16 @@ let products = [
     }
 ];
 let listCards  = [];
+const qrcode = new QRCode(qr, {
+    text: "Empty",
+    width: 128,
+    height: 128,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+})
+
+
 function initApp(){
     products.forEach((value, key) =>{
         let newDiv = document.createElement('div');
@@ -93,6 +103,7 @@ function initApp(){
             <button onclick="addToCard(${key})">Add To Cart</button>`;
         list.appendChild(newDiv);
     })
+    
 }
 initApp();
 function addToCard(key){
@@ -102,6 +113,7 @@ function addToCard(key){
         listCards[key].quantity = 1;
     }
     reloadCard();
+    
 }
 function reloadCard(){
     listCard.innerHTML = '';
@@ -126,8 +138,7 @@ function reloadCard(){
     })
     total.innerText = totalPrice.toLocaleString();
     quantity.innerText = count;
-   
- 
+
 }
 function changeQuantity(key, quantity){
     if(quantity == 0){
